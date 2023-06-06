@@ -1,0 +1,74 @@
+.offcanvas.offcanvas-start.show {
+    /* left: unset; */
+    /* right: 0; */
+    transform: translateX(1px)!important;
+}
+.offcanvas {
+    left: auto!important;
+    right: 0;
+    -webkit-transform: translateX(100%)!important;
+    transform: translateX(100%)!important;
+}
+
+.filter-btn{
+    border: 1px solid #0072CF;
+    background: transparent;
+    color: #0072CF;
+    border-radius: 50px;
+    height: 46px;
+    width: 46px;
+}
+
+.filtr-box{
+    display: flex;
+    justify-content: end;
+    /* margin: 0px 0 30px 0; */
+}
+
+.table-search{
+    border: 1px solid #C0C3C9;
+    min-width: 268px;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.table-search:focus-visible{
+    outline: none;
+}
+
+.date-input{
+    box-sizing: border-box;
+border: 1px solid #C0C3C9;
+border-radius: 5px;
+width: 240px;
+padding: 10px 18px;
+margin: 12px 0;
+}
+
+.offcanvas-body{
+    text-align: center;
+}
+
+.filter-headings{
+    font-family: 'Rubik', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+
+.filter-select{
+    box-sizing: border-box;
+    border: 1px solid #C0C3C9;
+    border-radius: 5px;
+    width: 240px;
+    padding: 10px 18px;
+    margin: 0px auto 12px auto;
+}
+
+.filter-main-heading{
+    font-family: 'Paytone One', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 31px;
+}

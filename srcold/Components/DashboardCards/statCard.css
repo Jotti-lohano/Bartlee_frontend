@@ -1,0 +1,42 @@
+.stat-card {
+    background: #F8EDD0;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.stat-img {
+    width: 70px;
+    object-fit: contain;
+}
+
+.for-stat-card-bg {
+    background: #fff;
+    box-shadow: 0 3px 33px rgb(0 0 0 / 7%);
+}
+
+
+.small-font {
+    font-size: 15px;
+}
+
+.secondcard {
+    background: #E2B3C5;
+}
+
+
+.dashboard-card-text {
+    font-family: 'Aventa';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 15px;
+    color: #111;
+    padding-bottom: 12px;
+}
+
+.dashboard-card-num {
+    font-family: 'Aventa';
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 37px;
+    color: #111;
+}

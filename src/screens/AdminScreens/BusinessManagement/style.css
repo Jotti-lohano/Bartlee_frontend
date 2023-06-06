@@ -1,0 +1,23 @@
+.corner-detail {
+    background-color: #FDFDFD;
+    border: 1px solid #D8E9F7;
+    max-width: 268px;
+    padding: 20px;
+    margin-left: auto;
+}
+
+.business-type-table .custum-class {
+    display: none;
+}
+
+.business-type-table th {
+    padding: 0 30px;
+}
+
+.business-type-table td {
+    padding: 0 30px;
+}
+
+.business-type-table .table tr {
+    background-color: transparent!important;
+}

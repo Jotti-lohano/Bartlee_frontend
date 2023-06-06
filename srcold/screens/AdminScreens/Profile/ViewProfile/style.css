@@ -1,0 +1,8 @@
+.profiles-btn{
+    display: inline-block;
+    text-align: center;
+}
+.profiles-btn .chnge-ps{
+    display: block;
+    padding: 10px 0;
+}

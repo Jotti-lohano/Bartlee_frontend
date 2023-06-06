@@ -1,0 +1,66 @@
+.site-btn {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    display: inline-block;
+    padding: 10px 40px;
+    min-width: 130px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #7A0B16;
+    background: #7A0B16;
+    transition: ease-in-out .2s;
+    font-family: 'Aventa';
+    font-weight: 500;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.site-btn:hover {
+    background: transparent;
+    color: #7A0B16;
+}
+
+.site-btn-gray {
+    color: #7A0B16;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 40px;
+    min-width: 130px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #7A0B16;
+    background: none;
+    transition: ease-in-out .2s;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.site-btn-gray:hover {
+    background: #7A0B16;
+    color: #fff;
+}
+
+.site-btn-transparent {
+    color: #0072CF;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 40px;
+    min-width: 130px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #0072CF;
+    background: none;
+    transition: ease-in-out .2s;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.site-btn-transparent:hover {
+    background: #0072CF;
+    color: #fff;
+}

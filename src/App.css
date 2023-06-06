@@ -1,0 +1,304 @@
+@import url('Assets/fonts/stylesheet.css');
+
+body {
+  font-family: 'Rubik', sans-serif !important;
+  min-height: 100vh;
+}
+
+.p-sm {
+  font-size: 14px !important;
+}
+
+.p-xs {
+  font-size: 12px !important;
+}
+
+.graph-text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(270deg);
+  left: -40px;
+  margin: 0 !important;
+  font-weight: 400;
+  width: 140px;
+}
+
+.graph-wrapper {
+  width: calc(100% - 40px);
+  margin-left: auto;
+}
+
+.blue-text {
+  color: #1F1F4F;
+}
+
+.p-md {
+  font-size: 20px;
+}
+
+.grey-text {
+  color: #666666;
+}
+
+.site-label {
+  font-weight: 500;
+}
+
+.red-text {
+  color: #ff0000;
+}
+
+.d-red-text {
+  color: #C4122E;
+}
+
+.yellow-text {
+  color: #FFB607;
+}
+
+.l-grey-text {
+  color: #999999;
+}
+
+.medium {
+  font-weight: 500 !important;
+}
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+}
+
+a:hover {
+  color: #1F1F4F;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - var(--bs-modal-margin)*2);
+}
+
+.modal.show {
+  display: block;
+  backdrop-filter: blur(15px);
+  background: rgb(119 119 255 / 35%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.lottie-icon {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.transparent-btn {
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #fff;
+}
+
+.grey-line {
+  border: 0;
+  border-bottom: 1px solid rgb(112 112 112 / 50%);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.colour-green {
+  color: green;
+}
+
+.colour-red {
+  color: red;
+}
+
+.def-red {
+  color: #666666;
+}
+
+::placeholder {
+  color: #999999;
+  font-family: 'Rubik', sans-serif;
+}
+
+label {
+  color: #333333;
+  font-family: 'Rubik', sans-serif;
+}
+
+.web-slect {
+  max-width: 180px;
+  border: 1px solid #0072cf3d !important;
+  margin: 10px;
+  background-color: transparent !important;
+  color: #0072CF !important;
+}
+
+.back-arrow {
+  color: #D1D1D1;
+}
+
+.theme-text-color {
+  color: #0072CF;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.inner-label {
+  font-family: 'Aventa';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 19px;
+  color: #111;
+}
+
+.normal-text {
+  font-family: 'Aventa';
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #00293b;
+}
+
+.heading-24 {
+  font-family: 'Paytone One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: #1C1C1C;
+  padding: 10px 0;
+}
+
+.detail-text {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.mechanic-pic-upload {
+  display: none;
+}
+
+.for-relative {
+  position: relative;
+}
+
+
+.uplaod-label {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000a8;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.uplaod-label2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.preview-pic {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.sidebar-li.active {
+  background-color: #7A0B16 !important;
+  color: #fff;
+}
+
+.sidebar-li.active .sidebar-links {
+  color: #fff;
+  font-weight: 900 !important;
+}
+
+.sidebar-li.active .sidebar-links img {
+  filter: brightness(100);
+}
+
+.sidebar-li:hover .sidebar-links {
+  background-color: #7A0B16 !important;
+  color: #fff;
+}
+
+.sidebar-li:hover .sidebar-links img {
+  filter: brightness(100);
+}
+
+.sidebar-li:hover {
+  background-color: #7A0B16 !important;
+}
+
+
+.green-option {
+  color: green !important;
+}
+
+.red-option {
+  color: red !important;
+}
+
+.backlink {
+  font-family: 'Aventa';
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  line-height: 82px;
+  color: #666666;
+  margin-top: 25px;
+}
+
+.back{
+  font-family: 'Aventa';
+font-weight: normal;
+font-size: 14px;
+letter-spacing: -0.04em;
+line-height: 20px;
+color: #7a0b16;
+}
+
+.input-group-text{
+  position: absolute;
+  left: -32px;
+  background: none!important;
+  border: none!important;
+  color: #436B77!important;
+  top: -3px;
+}
+
+@media screen and (max-width: 991px) {
+  .for-loti{
+    display: none;
+  }
+}
