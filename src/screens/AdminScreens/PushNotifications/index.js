@@ -9,6 +9,7 @@ import { pushNotifications } from '../../../Components/Data/data.js'
 import { Link } from 'react-router-dom';
 import { images } from '../../../Assets';
 import Modals from '../../../Components/Modals';
+import UseTableControls from '../../../Config/UseTableControls';
 
 function Index() {
 
@@ -46,6 +47,32 @@ function Index() {
         setShow1(false);
         setShow3(true);
     };
+
+    const {
+        filterSort,
+        filterSortValue,
+        setFilterSortValue,
+        paginateFilter,
+        setPaginateFilter,
+        filterSortValues,
+        filterSearch,
+        filterSearchValue,
+        setFilterSearchValue,
+        dateFilter,
+        filterFrom,
+        setFilterFrom,
+        filterTo,
+        setFilterTo
+      } = UseTableControls();
+      
+
+    const searchFilter = () => {    
+        let search = `&search=${filterSearchValue}`;
+        console.log('search',search);
+        let queryParams = `&from=${filterFrom}&to=${filterTo}&sort=${filterSortValue}`;
+        
+        // listData(undefined, search+queryParams);
+    };
     
 
 
@@ -58,7 +85,8 @@ function Index() {
                         <Link onClick={handleShow1} className='site-btn' to={''}>Push New Notification</Link>
                     </div>
                     <div className="dash-card">
-                        <TableFilter />
+                        <TableFilter 
+                        searchFilter={searchFilter}/>
                         <MainTable header={tableHead}>
                             <tbody>
                                 {pushNotifications.map(

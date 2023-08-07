@@ -54,7 +54,7 @@ function Index() {
       });
       console.log('responsefeed',response.data.data);
     if (response) {
-      
+      // console.log('>>>>>>>>',response.data.data);
       let filter = response.data;
       
       window.e = filter;

@@ -34,7 +34,8 @@ const ForgetPassword = (props) => {
   const handleClick = async (e) => {
     
     e.preventDefault()
-    let response = await axios.post("http://localhost/BARTLEE/bartlee/api/v1/user/forgot-password", formData).catch((e) => {
+    // let response = await axios.post("http://localhost/BARTLEE/bartlee/api/v1/user/forgot-password", formData).catch((e) => {
+    let response = await axios.post("http://127.0.0.1:8000/api/v1/user/forgot-password", formData).catch((e) => {
       console.log('eee');
         document.getElementById(
           "responseFromServer"

@@ -44,7 +44,7 @@ export const SideBar = (props) => {
           <Link className="sidebar-links" to="/FeedbackManagement"><span className="dash-icons flex-shrink-0"><img src={images.feedbacksManagIcon} alt="" className="img-fluid me-2" /></span><span className="dash-link">Feedback Management</span></Link>
         </li>
         <li className={`mt-3 sidebar-li ${location.pathname.includes('/PushNotifications') && ("active")}`}>
-          <Link className="sidebar-links" to=""><span className="dash-icons flex-shrink-0"><img src={images.pushNoti} alt="" className="img-fluid me-2" /></span><span className="dash-link">Push Notifications</span></Link>
+          <Link className="sidebar-links" to="/PushNotifications"><span className="dash-icons flex-shrink-0"><img src={images.pushNoti} alt="" className="img-fluid me-2" /></span><span className="dash-link">Push Notifications</span></Link>
         </li>
         <li className={`mt-3 sidebar-li ${location.pathname.includes('/logout') && ("active")}`}>
           <Link onClick={handleShow1} className="sidebar-links"><span className="dash-icons flex-shrink-0"><img src={images.logoutIcon} alt="" className="img-fluid me-2" /></span><span className="dash-link">Logout</span></Link>

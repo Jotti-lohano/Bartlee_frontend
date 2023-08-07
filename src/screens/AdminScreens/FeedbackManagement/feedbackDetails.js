@@ -57,6 +57,12 @@ function FeedbackDetails() {
         setThisfeedbacksStatus(thisStatus);
     }, [])
 
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString('en-GB');
+
+    const dateParts = data.created_at.split("T"); // Split the date and time parts
+    // return dateParts[0]; // Return the date part (index 0)
+
     return (
         <div>
             <Layout>
@@ -90,7 +96,7 @@ function FeedbackDetails() {
                                     <div className="col-lg-6">
                                         <div className='py-3'>
                                             <label className='inner-label'>Date</label>
-                                            <h6 className='normal-text'>{data.created_at}</h6>
+                                            <h6 className='normal-text'>{dateParts[0]}</h6>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">

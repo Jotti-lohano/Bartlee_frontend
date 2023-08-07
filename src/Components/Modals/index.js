@@ -18,7 +18,7 @@ const Modals = (props) => {
   };
   return (
     <div>
-      <Modal show={props?.show}  onHide={props?.handleClose1}>
+      <Modal show={props?.show}  onHide={props?.handleClose}>
         <Modal.Header closeButton>
         </Modal.Header>
         <Modal.Body>
@@ -113,7 +113,8 @@ const Modals = (props) => {
           {props.modalDouble
             ?
             (<div className='d-flex align-items-center justify-content-center'>
-              <WebButton onClick={props?.handleActionnew}
+              <WebButton 
+                onClick={props?.handleActionnew}
                 className="site-btn d-block text-center mt-4 mx-1"
                 text={props.modalbtntext}
                 type="button"
@@ -125,7 +126,9 @@ const Modals = (props) => {
               />
             </div>)
             :
-            (<WebButton onClick={props.handleActionSingle?props.handleActionSingle:props?.handleClose}
+            (<WebButton 
+              onClick={props.handleActionSingle?props.handleActionSingle:props?.handleClose}
+              // onClick={handleContinueClick}
               className="site-btn d-block text-center mt-4 mx-auto"
               text={props.modalbtntext}
               type="button"
@@ -155,5 +158,13 @@ const Modals = (props) => {
     </div>
   )
 }
+
+const handleContinueClick = () => {
+  // Perform any necessary actions or API calls here before redirecting
+  // For example, you might want to submit the new password data to your server.
+
+  // Redirect to the login page when the "Continue" button is clicked
+  this.$router.push("/");
+};
 
 export default Modals

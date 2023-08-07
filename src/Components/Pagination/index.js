@@ -3,6 +3,7 @@ import Pagination from 'react-bootstrap/Pagination';
 import './style.css';
 
 function Paginations(props) {
+    console.log('propssssss',props.paginateFilter);
     let paginateFilter = props.paginateFilter ?? {};  
     let active = paginateFilter.current_page ?? 1;
     let items = [];

@@ -189,8 +189,8 @@ function BusinessProfile() {
 
             <Modals show={show1 == 1 } modalDouble='true' modalicon={images.modalicon1} handleActionnew={handleShowAccepted1} modalbtntext="Yes" modalbtntext2="No" text={"Are you sure you want to active this Business?"} handleClose={handleClose1} close={() => { setShow1(2) }} />
             <Modals show={show1 == 0 } modalDouble='true' modalicon={images.modalicon1} handleActionnew={handleShowAccepted2} modalbtntext="Yes" modalbtntext2="No" text={"Are you sure you want to in-active this Business?"} handleClose={handleClose2} close={() => { setShow1(2) }} />
-            <Modals show={show3}  modalicon={images.check} modalbtntext="Okay"  text={"Abc Business Activated Successfully"} handleClose={handleClose3} close={() => { setShow1(2) }} />
-            <Modals show={show4}  modalicon={images.check} modalbtntext="Okay"  text={"Abc Business Inactivated Successfully"} handleClose={handleClose4} close={() => { setShow1(2) }} />
+            <Modals show={show3}  modalicon={images.check} modalbtntext="Ok"  text={"Abc Business Activated Successfully"} handleClose={handleClose3} close={() => { setShow1(2) }} />
+            <Modals show={show4}  modalicon={images.check} modalbtntext="Ok"  text={"Abc Business Inactivated Successfully"} handleClose={handleClose4} close={() => { setShow1(2) }} />
         </div>
     )
 }

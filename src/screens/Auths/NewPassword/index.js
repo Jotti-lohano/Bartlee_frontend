@@ -19,6 +19,14 @@ function NewPassword() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  // const handleRedirection = () => redirect;
+  const handleRedirection = () => {
+    // Perform any necessary actions or logic before redirection if needed.
+
+    // Redirect to the desired location using history.push()
+    navigate("/");
+  };
+
 
 
 
@@ -89,7 +97,7 @@ function NewPassword() {
             </div>
           </div>
         </div>
-        <Modals show={show} modalicon={images.check} modalbtntext="Continue" text={"Your Password Has Been Reset. Please Login To Continue."} handleClose={handleClose} close={() => { setShow(false) }} />
+        <Modals show={show} modalicon={images.check} modalbtntext="Continue" text={"Your Password Has Been Reset. Please Login To Continue."} handleClose={handleClose} handleActionSingle={handleRedirection} close={() => { setShow(false) }} />
       </section>
     </>
   )

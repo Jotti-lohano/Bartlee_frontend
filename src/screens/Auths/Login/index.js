@@ -22,6 +22,7 @@ function Login() {
     e.preventDefault()
 
     let response = await axios.post("v1/user/login", formData).catch((e) => {
+      console.log(response);
 
       if(e.response.data.email ){
         document.getElementById(

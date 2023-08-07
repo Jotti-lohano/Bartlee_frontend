@@ -23,7 +23,7 @@ function Addbusiness() {
             title: 'Status',
         },
     ]
-
+    const handleClose = () => setShow1(false);
 
     let navigate = useNavigate();
     const [formData, setFormData] = useState({})
@@ -119,7 +119,7 @@ function Addbusiness() {
 
             <Modals show={show1} showTypeinput="true" modalbtntext="Add" label={'Business Type'}  onClick={handleClick}  onChange={(event) => {
                           setFormData({ ...formData, type: event.target.value });
-                        }} text={"Business Type"}   handleClose={handleClose1} close={() => { setShow1(false) }} />
+                        }} text={"Business Type"}   handleClose={handleClose} close={() => { setShow1(false) }} />
         </div>
     )
 }

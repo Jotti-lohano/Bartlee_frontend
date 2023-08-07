@@ -23,6 +23,7 @@ const SiteInput = (props) => {
           <input
             type={showPassword ? 'text' : props?.type}
             id={props?.id}
+            required="required"
             contentEditable={props?.editable ?? 'true'}
             className={props?.className}
             placeholder={props?.placeholder}  name={props?.name} onChange={props?.onChange}

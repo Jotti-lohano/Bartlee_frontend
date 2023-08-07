@@ -57,6 +57,8 @@ function ArtistSkillAdd() {
         
       }, [result])
 
+      const handleClose = () => setShow1(false);  
+
     const handleClose1 =  async (e) => {
 
         let response = await axios.post("v1/user/add-skill", formData).catch((e) => {
@@ -110,7 +112,7 @@ function ArtistSkillAdd() {
 
             <Modals show={show1} showTypeinput="true" modalbtntext="Add"  text={"Skill Type"} label={'Skill Type'} onChange={(event) => {
                           setFormData({ ...formData, skill: event.target.value });
-                        }} handleClose={handleClose1} close={() => { setShow1(false) }} />
+                        }} handleClose={handleClose} close={() => { setShow1(false) }} />
         </div>
   )
 }

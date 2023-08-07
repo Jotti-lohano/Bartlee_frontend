@@ -61,11 +61,11 @@ function TableFilter({ name, ...props }) {
                                     }}
                                 />
                             </div>
-                            <h6 className='filter-headings mt-3'>Filter By Status:</h6>
+                            {/* <h6 className='filter-headings mt-3'>Filter By Status:</h6>
                             <select class="form-select filter-select" aria-label="Default select example">
                                 <option selected>Active</option>
                                 <option value="1">Inactive</option>
-                            </select>
+                            </select> */}
                             <div>
                             <Link className='site-btn my-2' onClick={() => {
                             searchHere();

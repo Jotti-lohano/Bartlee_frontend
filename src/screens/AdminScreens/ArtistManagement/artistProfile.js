@@ -220,8 +220,8 @@ function ArtistProfile() {
 
             <Modals show={show1} modalDouble='true' modalicon={images.modalicon1} handleActionnew={handleShowAccepted1} modalbtntext="Yes" modalbtntext2="No" text={"Are You Sure You Want To Activate This Artist?"} handleClose={handleClose1} close={() => { setShow1(false) }} />
             <Modals show={show2} modalDouble='true' modalicon={images.modalicon1} handleActionnew={handleShowAccepted2} modalbtntext="Yes" modalbtntext2="No" text={"Are You Sure You Want To Inactivate This Artist?"} handleClose={handleClose2} close={() => { setShow2(false) }} />
-            <Modals show={show3} modalicon={images.check} modalbtntext="Okay" text={"Abc Artist Activated Successfully"} handleClose={handleClose3} close={() => { setShow1(false) }} />
-            <Modals show={show4} modalicon={images.check} modalbtntext="Okay" text={"Abc Artist Inactivated Successfully"} handleClose={handleClose4} close={() => { setShow1(false) }} />
+            <Modals show={show3} modalicon={images.check} modalbtntext="Ok" text={"Abc Artist Activated Successfully"} handleClose={handleClose3} close={() => { setShow1(false) }} />
+            <Modals show={show4} modalicon={images.check} modalbtntext="Ok" text={"Abc Artist Inactivated Successfully"} handleClose={handleClose4} close={() => { setShow1(false) }} />
         </div>
     )
 }

@@ -65,11 +65,11 @@ function ViewProfile() {
                                 </div>
                                 <div className='py-3'>
                                     <h5 className='inner-label'>Full Name</h5>
-                                    <h6 className='detail-text'>{data.name}</h6>
+                                    <h6 className='detail-text'>{data.first_name +' '+ data.last_name}</h6>
                                 </div>
                                 <div className='py-3'>
                                     <h5 className='inner-label'>Contact Number:</h5>
-                                    <h6 className='detail-text'>{data.phone_number}</h6>
+                                    <h6 className='detail-text'>{data.phone}</h6>
                                 </div>
                                 <div className='py-3'>
                                     <h5 className='inner-label'>Email Address</h5>

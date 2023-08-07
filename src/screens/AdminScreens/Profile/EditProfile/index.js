@@ -22,7 +22,12 @@ function EditProfile() {
     
     const [data,setData] = useState({});
     const [userData, setUserData] = useState({});
-  
+    const redirectToProfile = () => {
+        // Perform any necessary actions or logic before redirection if needed.
+    
+        // Redirect to the desired location using history.push()
+        navigate("/AdminScreens/ViewProfile");
+      };
 
     useEffect(() => {
         document.title = 'BARTLEE | Details';
@@ -202,11 +207,11 @@ function EditProfile() {
                                                     type="button"
                                                     className="site-btn"
                                                 />
-                                                <WebButton
+                                                {/* <WebButton
                                                     text="Cancel"
                                                     type="button"
                                                     className="site-btn-gray ms-2"
-                                                />
+                                                /> */}
                                             </div>
                                         </div>
                                         <div className="col-12" id="resultDiv"></div>
@@ -218,7 +223,7 @@ function EditProfile() {
                 </div>
             </Layout>
 
-            <Modals show={show1} modalicon={images.check} modalbtntext="Continue" text={"Your Profile Has Been Updated Successfully"} handleClose={handleClose1} close={() => { setShow1(false) }} />
+            <Modals show={show1} modalicon={images.check} modalbtntext="Continue" text={"Your Profile Has Been Updated Successfully"} handleClose={handleClose1} handleActionSingle={redirectToProfile} close={() => { setShow1(false) }} />
         </div>
     )
 }
